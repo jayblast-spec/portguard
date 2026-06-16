@@ -35,10 +35,8 @@ This repository has been upgraded from a basic generated shell into a category-s
 npm install
 npm run dev
 `
-"@
-}
-function UpgradeDoc(System.Collections.Hashtable) {
-@"
+"@ }
+function MakeEliteDoc(System.Collections.Hashtable) { return @"
 # Elite Upgrade Note
 
 ## Product Standard
