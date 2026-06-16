@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PortGuard
 
-## Getting Started
+PortGuard is part of Joy Ogunleye's Cybersecurity Suite.
 
-First, run the development server:
+## Promise
 
-```bash
+see risky open ports before attackers turn them into doors
+
+## Built For
+
+security analysts, IT admins, and MSP operators
+
+## Product Modules
+
+- Attack surface score
+- Port-to-service fingerprint
+- Misconfiguration checklist
+- Remediation runbook
+- Executive exposure brief
+
+## First Workflow
+
+1. Enter real context.
+2. Generate a useful first output.
+3. Review risk, confidence, or next action.
+4. Save the result into product memory in a future paid workspace.
+
+## Upgrade Direction
+
+This repository has been upgraded from a basic generated shell into a category-specific product surface with a marketable landing experience, live workflow preview, commercial positioning, and mobile-first responsive UI.
+
+## Run Locally
+
+`ash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+`
+"@
+}
+function UpgradeDoc(System.Collections.Hashtable) {
+@"
+# Elite Upgrade Note
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Product Standard
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+PortGuard should be judged as a real Network exposure business, not a generic AI wrapper.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Non-Negotiables
 
-## Learn More
+- Category-specific language and workflows
+- Mobile-first professional UI
+- One useful result before signup friction
+- Clear commercial upgrade path
+- Saved history, exports, alerts, and team features in later versions
 
-To learn more about Next.js, take a look at the following resources:
+## Next Functional Expansion
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Add persistence for generated outputs
+- Add auth and workspace ownership
+- Add billing and entitlement gates
+- Add source-backed reports and export flows
+- Add analytics for activation and conversion
