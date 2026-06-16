@@ -1,37 +1,42 @@
 # PortGuard
 
-PortGuard is part of ArkNet Digital's Cybersecurity Suite.
+PortGuard is an ArkNet Digital cybersecurity product.
 
 ## Promise
 
-see risky open ports before attackers turn them into doors
+Turn open ports into a prioritized firewall action plan.
 
-## Built For
+PortGuard is a defensive network exposure cockpit for analysts, MSPs, and operators who need to understand exposed services, business risk, and remediation steps fast.
 
-security analysts, IT admins, and MSP operators
+## Current v1
 
-## Product Modules
+- Premium defensive cockpit UI
+- Live product-specific intake
+- `POST /api/intelligence`
+- Product-specific scoring and remediation queue
+- Contributor mission lanes
+- Mobile-friendly layout
 
-- Attack surface score
-- Port-to-service fingerprint
-- Misconfiguration checklist
-- Remediation runbook
-- Executive exposure brief
+## Contributor Missions
 
-## Open Source Direction
+- Nmap import: Parse XML/JSON scan results into the cockpit.
+- Cloud firewall review: Import AWS/Azure/GCP rules and explain risky exposure.
+- Port knowledge base: Improve service fingerprints and remediation notes.
+- SLA queue: Turn each risk into owner, severity, and due date.
 
-This repo is open to contributors because strong ideas move faster when serious builders can inspect, improve, and extend them. The goal is not secrecy. The goal is speed, quality, and contribution.
+## Defensive Scope
 
-## First Workflow
-
-1. Enter real context.
-2. Generate a useful first output.
-3. Review risk, confidence, or next action.
-4. Save the result into product memory in a future paid workspace.
+PortGuard should never encourage unauthorized scanning. Keep checks scoped to owned assets and imported scan results.
 
 ## Run Locally
 
 ```bash
 npm install
 npm run dev
+```
+
+## Build
+
+```bash
+npm run build
 ```
