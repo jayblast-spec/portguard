@@ -18,6 +18,10 @@ security analysts, IT admins, and MSP operators
 - Remediation runbook
 - Executive exposure brief
 
+## Open Source Direction
+
+This repo is open to contributors because strong ideas move faster when serious builders can inspect, improve, and extend them. The goal is not secrecy. The goal is speed, quality, and contribution.
+
 ## First Workflow
 
 1. Enter real context.
@@ -25,36 +29,9 @@ security analysts, IT admins, and MSP operators
 3. Review risk, confidence, or next action.
 4. Save the result into product memory in a future paid workspace.
 
-## Upgrade Direction
-
-This repository has been upgraded from a basic generated shell into a category-specific product surface with a marketable landing experience, live workflow preview, commercial positioning, and mobile-first responsive UI.
-
 ## Run Locally
 
-`ash
+```bash
 npm install
 npm run dev
-`
-"@ }
-function MakeEliteDoc(System.Collections.Hashtable) { return @"
-# Elite Upgrade Note
-
-## Product Standard
-
-PortGuard should be judged as a real Network exposure business, not a generic AI wrapper.
-
-## Non-Negotiables
-
-- Category-specific language and workflows
-- Mobile-first professional UI
-- One useful result before signup friction
-- Clear commercial upgrade path
-- Saved history, exports, alerts, and team features in later versions
-
-## Next Functional Expansion
-
-- Add persistence for generated outputs
-- Add auth and workspace ownership
-- Add billing and entitlement gates
-- Add source-backed reports and export flows
-- Add analytics for activation and conversion
+```
