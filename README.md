@@ -1,60 +1,55 @@
 <div align="center">
 
-# 🚪 PortGuard
+# PortGuard
 
-**Free port reference and exposed-device lookup — know exactly what is open on your network.**
+### Know What's Open Before Attackers Do
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-6366f1?style=for-the-badge)](https://portguard-six.vercel.app)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![MIT License](https://img.shields.io/badge/License-MIT-34d399?style=for-the-badge)](LICENSE)
+PortGuard is a free port reference and exposed-device lookup tool — see risky open ports on a network before they turn into doors for attackers.
+
+<p>
+  <a href="https://portguard-six.vercel.app"><img alt="Live Demo" src="https://img.shields.io/badge/Live-Demo-1D4ED8?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://github.com/jayblast-spec/portguard"><img alt="GitHub Repo" src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+</p>
+
+<p>
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-App%20Router-000000?style=flat-square&logo=next.js&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-19-1D4ED8?style=flat-square&logo=react&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-4-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white">
+  <img alt="Vercel" src="https://img.shields.io/badge/Vercel-Deployment-000000?style=flat-square&logo=vercel&logoColor=white">
+</p>
+
+<p>
+  <img alt="Animated PortGuard headline" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2600&pause=650&color=1D4ED8&center=true&vCenter=true&width=760&lines=Search+a+port+or+a+device+IP;Every+well-known+port%2C+risk-rated;See+what+a+host+exposes%2C+not+guess;No+login%2C+results+in+milliseconds">
+</p>
 
 </div>
 
----
+## What It Does
 
-## ✨ Features
+PortGuard combines a port reference (service name, purpose, and relative risk for well-known ports) with an exposed-device lookup: enter an IP or search a port/service and PortGuard reports what's plausibly exposed on that host, so the risk of an open port is visible before it's exploited.
 
-- 🔢 **Port encyclopedia** — every well-known port with its service, risk level, and common CVEs
-- 🌐 **IP exposure lookup** — query Shodan-style data to see what services a host exposes
-- ⚠️ **Risk classification** — ports rated Low / Medium / High / Critical for quick triage
-- 🔍 **Search by port or service** — find port 3389 or search "RDP" — same result
-- 📋 **Firewall rule templates** — copy iptables / ufw / Windows Firewall rules directly
-- 🏷️ **Attack surface summary** — snapshot of exposure posture for any IP range
-- ⚡ **No login, instant results** — lookup within milliseconds
+## How It Works
 
----
+- Next.js App Router front end (`app/page.tsx`) drives the port reference and lookup interface.
+- `app/api/device-lookup/route.ts` handles the exposed-device/IP lookup server-side; `app/api/intelligence/route.ts` adds an analysis layer that turns raw lookup data into a readable risk summary.
+- Styling is Tailwind CSS 4; the reference data and lookup flow require no login.
 
-## 🚀 Quick Start
+## Live
 
-```bash
-git clone https://github.com/jayblast-spec/portguard.git
-cd portguard
-npm install
-npm run dev
-```
+Production: **https://portguard-six.vercel.app**
 
-Open [http://localhost:3000](http://localhost:3000)
-
----
-
-## 🛠 Stack
+## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
-| Framework | Next.js 14 (App Router) |
+|---|---|
+| Framework | Next.js (App Router) |
+| UI Library | React 19 |
 | Language | TypeScript |
-| Styling | Tailwind CSS |
+| Styling | Tailwind CSS 4 |
+| Server Logic | Next.js API routes (`/api/device-lookup`, `/api/intelligence`) |
 | Deployment | Vercel |
 
----
-
-## 📦 Deploy Your Own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/jayblast-spec/portguard)
-
----
-
-## 📄 License
-
-MIT © [ArkNet.digital](https://www.arknet.digital/vault.html)
+<p align="center">
+  <img alt="ArkNet Digital" src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:1D4ED8,55:0B1E3D,100:020617&text=ArkNet%20Digital%20%7C%20Contact%3A%20michael%40arknet.digital&fontColor=FAFAFA&fontSize=16&fontAlign=50&animation=fadeIn">
+</p>
