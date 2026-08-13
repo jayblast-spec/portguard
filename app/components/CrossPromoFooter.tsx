@@ -1,5 +1,5 @@
 const TOOLS = [
-  { name: "Exposure Watch", description: "Email & password breach checks", live: true, url: "https://exposure-watch.vercel.app" },
+  { name: "Exposure Watch", description: "Email & password breach checks", live: false, url: null },
   { name: "PortGuard", description: "Exposed port & device scanner", live: true, url: "https://portguard-six.vercel.app" },
   { name: "SafeLink", description: "Link & file safety checker", live: true, url: "https://safelink-wheat.vercel.app" },
   { name: "SubnetPilot", description: "Subnet & CIDR calculator", live: true, url: "https://subnetpilot.vercel.app" },
