@@ -32,8 +32,18 @@ PortGuard combines a port reference (service name, purpose, and relative risk fo
 ## How It Works
 
 - Next.js App Router front end (`app/page.tsx`) drives the port reference and lookup interface.
-- `app/api/device-lookup/route.ts` handles the exposed-device/IP lookup server-side; `app/api/intelligence/route.ts` adds an analysis layer that turns raw lookup data into a readable risk summary.
+- `app/api/device-lookup/route.ts` validates the IPv4/IPv6 address, then queries the real Shodan host API server-side when `SHODAN_API_KEY` is configured.
 - Styling is Tailwind CSS 4; the reference data and lookup flow require no login.
+
+## Engineering Notes
+
+**The real problem:** "what's on this port" reference tables exist everywhere, but they don't tell you what's actually exposed on *your* address right now — that requires a real internet-wide scan index, not a static table.
+
+**The approach:** `device-lookup` queries Shodan's real host API — the same index security researchers use — for the target IP, and degrades honestly: no key configured returns `{ unavailable: true }` rather than a fabricated result, and a 404 from Shodan means "found: false," not an error.
+
+**One real number:** the static port reference table covers real, risk-tagged entries (each with a `low`/`medium`/`high` risk label and remediation tip) — not just a port-to-service name mapping.
+
+**Not handled yet:** domain lookups aren't supported yet, only raw IPv4/IPv6 — and the homepage "intelligence layer" is a decorative heuristic disconnected from the real Shodan lookup.
 
 ## Live
 
